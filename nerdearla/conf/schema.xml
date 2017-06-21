@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Solr managed schema - automatically generated - DO NOT EDIT -->
+<schema name="example-data-driven-schema" version="1.6">
+  <uniqueKey>id</uniqueKey>
+  <fieldType name="boolean" class="solr.BoolField" sortMissingLast="true"/>
+  <fieldType name="date" class="solr.TrieDateField" positionIncrementGap="0" docValues="true" precisionStep="0"/>
+  <fieldType name="double" class="solr.TrieDoubleField" positionIncrementGap="0" docValues="true" precisionStep="0"/>
+  <fieldType name="float" class="solr.TrieFloatField" positionIncrementGap="0" docValues="true" precisionStep="0"/>
+  <fieldType name="int" class="solr.TrieIntField" positionIncrementGap="0" docValues="true" precisionStep="0"/>
+  <fieldType name="long" class="solr.TrieLongField" positionIncrementGap="0" docValues="true" precisionStep="0"/>
+  <fieldType name="string" class="solr.StrField" sortMissingLast="true" docValues="true"/>
+  <fieldType name="lowercase" class="solr.TextField">
+    <analyzer>
+      <tokenizer class="solr.KeywordTokenizerFactory"/>
+      <filter class="solr.LowerCaseFilterFactory"/>
+    </analyzer>
+  </fieldType>
+  <fieldType name="text" class="solr.TextField" positionIncrementGap="100">
+    <analyzer type="index">
+      <tokenizer class="solr.StandardTokenizerFactory"/>
+      <filter class="solr.StopFilterFactory" words="stopwords.txt" ignoreCase="true"/>
+      <filter class="solr.LowerCaseFilterFactory"/>
+    </analyzer>
+    <analyzer type="query">
+      <tokenizer class="solr.StandardTokenizerFactory"/>
+      <filter class="solr.StopFilterFactory" words="stopwords.txt" ignoreCase="true"/>
+      <filter class="solr.SynonymGraphFilterFactory" expand="true" ignoreCase="true" synonyms="synonyms.txt"/>
+      <filter class="solr.LowerCaseFilterFactory"/>
+    </analyzer>
+  </fieldType>
+
+  <field name="_root_" type="string" docValues="false" indexed="true" stored="false"/>
+  <field name="_text_" type="text" multiValued="true" indexed="true" stored="false"/>
+  <field name="_version_" type="long" indexed="false" stored="false"/>
+
+  <field name="bio" type="text"/>
+  <field name="city" type="text"/>
+  <field name="country" type="text"/>
+  <field name="created" type="long"/>
+  <field name="description" type="text"/>
+  <field name="group" type="lowercase" multiValued="true"/>
+  <field name="id" type="lowercase" required="true"/>
+  <field name="joined" type="long"/>
+  <field name="link" type="string"/>
+  <field name="members" type="int"/>
+  <field name="membership_count" type="int"/>
+  <field name="name" type="text"/>
+  <field name="photo" type="string"/>
+  <field name="status" type="string"/>
+  <field name="topics" type="lowercase" multiValued="true"/>
+  <field name="type" type="lowercase"/>
+  <field name="venueAddress" type="text"/>
+  <field name="venueName" type="text"/>
+  <field name="visited" type="long"/>
+  <field name="who" type="string"/>
+  <field name="yes_rsvp_count" type="long"/>
+
+  <copyField source="*" dest="_text_"/>
+</schema>

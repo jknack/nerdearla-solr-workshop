@@ -1,0 +1,30 @@
+[ {
+  "created" : 1297257017000,
+  "id" : "jugargentina",
+  "name" : "Java User Group Argentina",
+  "link" : "https://www.meetup.com/jugargentina/",
+  "description" : "<p><span>Queremos que sea un lugar donde se comparte el conocimiento y se generen cosas que definan el futuro de Java.&nbsp;</span><br></p>\n<p> En el grupo organizador contamos con gente que participa en proyectos Open Source de nivel mundial y que no solo son especialistas en lo que hacen, sino que también definen el futuro de muchas tecnologías. La Argentina cuenta con muchísima gente excepcional que tuvo la suerte de participar en cosas muy importantes y generar cosas que se usan en todo el mundo. <br> Hoy nuestra idea es poder armar un lugar donde los que son especialistas, expertos o referentes de tecnologías java encuentren un grupo de gente que este al mismo nivel para compartir y discutir caminos o soluciones. Un lugar donde los que no son referentes, puedan nutrirse, aprender de los demas y puedan ver a donde esta el futuro y como formar parte de eso. Un lugar en el que se comparte el conocimiento para hacer un lugar mejor para todos.</p>\n<p>Twitter:&nbsp;<a href=\"https://twitter.com/JUGArgentina\">@JUGArgentina</a></p>\n<p>Slack:&nbsp;<a href=\"https://buenos-aires-tech.herokuapp.com/\">buenos-aires-tech</a></p>",
+  "members" : 2197,
+  "who" : "Javitos",
+  "photo" : "https://secure.meetupstatic.com/photos/event/3/9/e/5/600_50774821.jpeg",
+  "type" : "group"
+}, {
+  "created" : 1381519314000,
+  "id" : "Meetup-js",
+  "name" : "Meetup.js",
+  "link" : "https://www.meetup.com/Meetup-js/",
+  "description" : "<p>Grupo para debatir y compartir ideas en torno a Javascript (client-side y server-side), distintos frameworks, librerías y tecnologías en general. Un meetup mensual con charlas preparadas por miembros de la propia comunidad</p>",
+  "members" : 1856,
+  "who" : "Javascripters",
+  "type" : "group"
+}, {
+  "created" : 1418753282000,
+  "id" : "beerjs-ba",
+  "name" : "Beer.js Buenos Aires",
+  "link" : "https://www.meetup.com/beerjs-ba/",
+  "description" : "<p>A meetup group for beer-drinkers and technology-oriented individuals looking to become closer with the JavaScript community in Buenos Aires. Join us for casual drinking and nerd experience-swapping!</p>",
+  "members" : 1134,
+  "who" : "JavaScripters",
+  "photo" : "https://secure.meetupstatic.com/photos/event/6/5/c/9/600_455966057.jpeg",
+  "type" : "group"
+} ]
